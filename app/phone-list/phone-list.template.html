@@ -1,0 +1,17 @@
+<div class="container-fluid">
+	<div style="margin-top: 30px">
+	
+		<div style="margin-top: 30px; margin-bottom: 30px" id="result"></div>
+		
+		<input style="float:left" type="file" id="file1" name="file" multiple ng-files="$ctrl.getTheFiles($files)" />
+
+		<input class="btn-info" type="button" ng-click="$ctrl.uploadFiles()" value="Upload" />    
+		
+	</div>
+		
+	<ul class="nav nav-pills" style="margin-top: 30px">
+	  <li style="margin-left: 10px" role="presentation" class="active">
+		  <img ng-if="$ctrl.loading === true" src="../img/loading_data.gif"/> 
+	  </li>
+	</ul>
+</div>
